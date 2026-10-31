@@ -1,0 +1,9 @@
+Evaluation Level,Model,1.5s AP,1.0s AP,0.5s AP,Mean AP,PR-AUC,PR-AUC 95% CI,ROC-AUC,ROC-AUC 95% CI,Precision,Recall,F1,FPR,False Alarms/min,TP,FP,TN,FN,Latency (ms)
+Window-Level (N=18),Model A: Detection Only (Baseline),1.0,1.0,1.0,1.0,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,9,0,9,0,0.0
+Window-Level (N=18),Model B: Detection + Tracking (ByteTrack),0.75,1.0,1.0,0.9167,0.9444,"[0.7876, 1.0000]",0.9444,"[0.8125, 1.0000]",1.0,0.8889,0.9412,0.0,0.0,8,0,9,1,0.28
+Window-Level (N=18),Model C: Trajectory + GRU (Proposed),1.0,1.0,1.0,1.0,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,9,0,9,0,0.97
+Window-Level (N=18),Model C: Trajectory + XGBoost (Comparator),1.0,1.0,1.0,1.0,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,9,0,9,0,0.33
+Video-Level (N=6 independent videos),Model A: Detection Only (Baseline),1.0,1.0,1.0,1.0,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,3,0,3,0,0.0
+Video-Level (N=6 independent videos),Model B: Detection + Tracking (ByteTrack),0.8333,1.0,1.0,0.9444,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,3,0,3,0,0.28
+Video-Level (N=6 independent videos),Model C: Trajectory + GRU (Proposed),1.0,1.0,1.0,1.0,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,3,0,3,0,0.97
+Video-Level (N=6 independent videos),Model C: Trajectory + XGBoost (Comparator),1.0,1.0,1.0,1.0,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",1.0,1.0,1.0,0.0,0.0,3,0,3,0,0.33

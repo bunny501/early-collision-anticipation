@@ -1,0 +1,13 @@
+Evaluation Level,Model,1.5s AP,1.0s AP,0.5s AP,Mean AP,PR-AUC,PR-AUC 95% CI,ROC-AUC,ROC-AUC 95% CI,Precision,Recall,F1,FPR,False Alarms/min,Latency (ms),TP,FP,TN,FN
+Window-Level (N=48 windows),Tier 0: Center-Distance Shortcut Check,0.5314,0.6269,0.609,0.5891,0.7735,"[0.4441, 0.9847]",0.7604,"[0.5147, 0.9792]",0.8182,0.75,0.7826,0.1667,5.0,0.05,18,4,20,6
+Window-Level (N=48 windows),Model D: Simple Non-Temporal Baseline (Logistic Reg),0.3701,0.3571,0.359,0.3621,0.5742,"[0.2601, 0.8821]",0.4844,"[0.1817, 0.7986]",0.5294,0.375,0.439,0.3333,10.0,0.08,9,8,16,15
+Window-Level (N=48 windows),Model A: Detection-Only Baseline (YOLOv8n),0.4416,0.5255,0.5086,0.4919,0.7094,"[0.3834, 0.9633]",0.7622,"[0.5290, 0.9514]",0.7407,0.8333,0.7843,0.2917,8.75,0.06,20,7,17,4
+Window-Level (N=48 windows),Model B: Detection + Tracking (ByteTrack),0.5359,0.5983,0.4366,0.5236,0.7324,"[0.4305, 0.9438]",0.7326,"[0.4889, 0.9261]",0.6552,0.7917,0.717,0.4167,12.5,0.08,19,10,14,5
+Window-Level (N=48 windows),Model C: Complete Trajectory + XGBoost,0.3747,0.4099,0.3872,0.3906,0.6212,"[0.3392, 0.9253]",0.684,"[0.4323, 0.9051]",0.6429,0.75,0.6923,0.4167,12.5,0.08,18,10,14,6
+Window-Level (N=48 windows),Model C: Trajectory + GRU (Proposed),0.3725,0.4193,0.5942,0.462,0.6621,"[0.3346, 0.8775]",0.5799,"[0.3854, 0.7575]",0.6667,0.5,0.5714,0.25,7.5,0.16,12,6,18,12
+Video-Level (N=16 independent videos),Tier 0: Center-Distance Shortcut Check,0.7411,0.7853,0.8605,0.7956,0.8148,"[0.5412, 1.0000]",0.7812,"[0.4998, 1.0000]",0.8333,0.625,0.7143,0.125,0.19,0.05,5,1,7,3
+Video-Level (N=16 independent videos),Model D: Simple Non-Temporal Baseline (Logistic Reg),0.664,0.6313,0.532,0.6091,0.6084,"[0.2867, 0.8907]",0.4688,"[0.1584, 0.7937]",0.6,0.375,0.4615,0.25,0.38,0.08,3,2,6,5
+Video-Level (N=16 independent videos),Model A: Detection-Only Baseline (YOLOv8n),0.8201,0.7687,0.6662,0.7516,0.7894,"[0.4867, 1.0000]",0.7969,"[0.5000, 1.0000]",0.875,0.875,0.875,0.125,0.19,0.06,7,1,7,1
+Video-Level (N=16 independent videos),Model B: Detection + Tracking (ByteTrack),0.7363,0.817,0.6548,0.736,0.7843,"[0.4860, 1.0000]",0.7812,"[0.5167, 1.0000]",0.7778,0.875,0.8235,0.25,0.38,0.08,7,2,6,1
+Video-Level (N=16 independent videos),Model C: Complete Trajectory + XGBoost,0.6314,0.7842,0.5795,0.665,0.708,"[0.3987, 0.9714]",0.6875,"[0.3904, 0.9524]",0.75,0.75,0.75,0.25,0.38,0.08,6,2,6,2
+Video-Level (N=16 independent videos),Model C: Trajectory + GRU (Proposed),0.6079,0.6807,0.7736,0.6874,0.6789,"[0.3743, 0.9716]",0.6719,"[0.3748, 0.9637]",0.7143,0.625,0.6667,0.25,0.38,0.16,5,2,6,3

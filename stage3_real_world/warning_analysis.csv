@@ -1,0 +1,9 @@
+video_id,scene,time_of_event,time_of_alert,human_lead_time,model_a_warn_time,model_a_lead_time,model_a_warned_before_human,model_b_warn_time,model_b_lead_time,model_b_warned_before_human,model_c_gru_warn_time,model_c_gru_lead_time,model_c_gru_warned_before_human,model_c_xgb_warn_time,model_c_xgb_lead_time,model_c_xgb_warned_before_human
+937,Sub-urban,20.167,18.3,1.87,18.67s,1.5,False,18.67s,1.5,False,19.67s,0.5,False,18.67s,1.5,False
+103,Urban,20.467,19.4,1.07,18.97s,1.5,True,18.97s,1.5,True,18.97s,1.5,True,None,0.0,False
+519,Urban,19.567,19.033,0.53,18.07s,1.5,True,18.07s,1.5,True,18.57s,1.0,True,18.07s,1.5,True
+816,Urban,21.267,20.2,1.07,None,0.0,False,None,0.0,False,None,0.0,False,None,0.0,False
+59,Urban,18.933,18.6,0.33,17.43s,1.5,True,17.43s,1.5,True,17.43s,1.5,True,17.43s,1.5,True
+453,Highway,20.15,18.419,1.73,18.65s,1.5,False,18.65s,1.5,False,None,0.0,False,18.65s,1.5,False
+640,Highway,20.432,17.657,2.77,18.93s,1.5,False,18.93s,1.5,False,18.93s,1.5,False,18.93s,1.5,False
+608,Urban,19.914,16.892,3.02,18.91s,1.0,False,18.91s,1.0,False,18.91s,1.0,False,18.41s,1.5,False

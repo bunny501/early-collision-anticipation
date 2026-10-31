@@ -1,0 +1,5 @@
+Model,1.5s AP,1.0s AP,0.5s AP,Mean AP,PR-AUC,ROC-AUC,Precision,Recall,F1,FPR,False Alarms/min,Latency (ms),TP,FP,TN,FN
+A: Detection only,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,9.0,0.0,9.0,0.0
+B: Detection + Tracking,0.75,1.0,1.0,0.9167,0.9444,0.9444,1.0,0.8889,0.9412,0.0,0.0,0.28,8.0,0.0,9.0,1.0
+C: Trajectory + GRU (Proposed),1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.97,9.0,0.0,9.0,0.0
+C: Trajectory + XGBoost,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.33,9.0,0.0,9.0,0.0
