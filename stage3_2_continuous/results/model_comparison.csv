@@ -1,0 +1,7 @@
+Model,Mean Horizon AP,AP @ 1.5s,AP @ 1.0s,AP @ 0.5s,Val Tuned Threshold,Overall F1,Overall ROC-AUC,Overall FPR,Input Modality
+Model B (Detection + Tracking),0.6989,0.7624,0.668,0.6664,0.3,0.6761,0.694,0.5533,Bboxes + ByteTrack Kalman
+Model C (Trajectory XGBoost),0.6457,0.6505,0.6703,0.6163,0.3,0.6497,0.6567,0.5933,97 Engineered Trajectory Features
+Model A (Detection Only),0.6326,0.6468,0.6526,0.5983,0.3,0.618,0.6241,0.64,Detection bounding boxes
+Model D (Trajectory GRU),0.6293,0.6784,0.6227,0.5868,0.3,0.6387,0.612,0.62,Sequential 10x14 Trajectory Tensors
+Model E (Logistic Regression),0.6203,0.594,0.6488,0.6182,0.3,0.6154,0.5769,0.8,Standardized Static Features
+Model F (Center-Distance),0.5257,0.5268,0.5252,0.5252,0.35,0.6726,0.5497,0.9733,Ego-Lane Center Corridor Geometry
