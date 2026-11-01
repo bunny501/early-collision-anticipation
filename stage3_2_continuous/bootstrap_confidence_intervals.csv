@@ -1,0 +1,37 @@
+Metric,Model / Comparison,Point Estimate,95% CI Lower,95% CI Upper,CI Width,p-value (vs Null),Statistical Significance
+AP @ 1.5s,Model A (Detection Only),0.654,0.5551,0.7555,0.2004,N/A,N/A
+AP @ 1.0s,Model A (Detection Only),0.6629,0.5565,0.7699,0.2134,N/A,N/A
+AP @ 0.5s,Model A (Detection Only),0.6077,0.5067,0.7096,0.2029,N/A,N/A
+AP @ Mean (1.5s-0.5s),Model A (Detection Only),0.6416,0.5657,0.7212,0.1555,N/A,N/A
+AP @ 1.5s,Model B (Detection + Tracking),0.7659,0.6709,0.8464,0.1755,N/A,N/A
+AP @ 1.0s,Model B (Detection + Tracking),0.6761,0.5723,0.7768,0.2046,N/A,N/A
+AP @ 0.5s,Model B (Detection + Tracking),0.6771,0.572,0.7918,0.2198,N/A,N/A
+AP @ Mean (1.5s-0.5s),Model B (Detection + Tracking),0.7064,0.6302,0.7829,0.1527,N/A,N/A
+AP @ 1.5s,Model C (Trajectory XGBoost),0.6617,0.5525,0.7704,0.2179,N/A,N/A
+AP @ 1.0s,Model C (Trajectory XGBoost),0.6796,0.5731,0.7814,0.2083,N/A,N/A
+AP @ 0.5s,Model C (Trajectory XGBoost),0.6291,0.5273,0.7442,0.2169,N/A,N/A
+AP @ Mean (1.5s-0.5s),Model C (Trajectory XGBoost),0.6568,0.5728,0.7423,0.1695,N/A,N/A
+AP @ 1.5s,Model D (Trajectory GRU),0.6866,0.5837,0.7871,0.2033,N/A,N/A
+AP @ 1.0s,Model D (Trajectory GRU),0.6312,0.5298,0.7295,0.1998,N/A,N/A
+AP @ 0.5s,Model D (Trajectory GRU),0.5965,0.4969,0.6981,0.2012,N/A,N/A
+AP @ Mean (1.5s-0.5s),Model D (Trajectory GRU),0.6381,0.5762,0.7046,0.1284,N/A,N/A
+AP @ 1.5s,Model E (Logistic Regression),0.6064,0.5057,0.7094,0.2038,N/A,N/A
+AP @ 1.0s,Model E (Logistic Regression),0.6539,0.5547,0.7472,0.1925,N/A,N/A
+AP @ 0.5s,Model E (Logistic Regression),0.6261,0.5268,0.7368,0.21,N/A,N/A
+AP @ Mean (1.5s-0.5s),Model E (Logistic Regression),0.6288,0.5462,0.715,0.1688,N/A,N/A
+AP @ 1.5s,Model F (Center-Distance),0.5435,0.46,0.647,0.187,N/A,N/A
+AP @ 1.0s,Model F (Center-Distance),0.5421,0.4601,0.6442,0.1841,N/A,N/A
+AP @ 0.5s,Model F (Center-Distance),0.5426,0.4574,0.6498,0.1924,N/A,N/A
+AP @ Mean (1.5s-0.5s),Model F (Center-Distance),0.5427,0.469,0.6285,0.1596,N/A,N/A
+Delta AP @ 1.5s,Model D (GRU) vs Model A (Detection Only),0.0326,-0.1082,0.1674,0.2757,0.6620,Statistically Inconclusive (CI spans 0)
+Delta AP @ 1.0s,Model D (GRU) vs Model A (Detection Only),-0.0318,-0.1556,0.0883,0.2439,0.5960,Statistically Inconclusive (CI spans 0)
+Delta AP @ 0.5s,Model D (GRU) vs Model A (Detection Only),-0.0112,-0.147,0.1227,0.2697,0.8700,Statistically Inconclusive (CI spans 0)
+Delta AP @ Mean (1.5s-0.5s),Model D (GRU) vs Model A (Detection Only),-0.0034,-0.0885,0.0802,0.1687,0.9390,Statistically Inconclusive (CI spans 0)
+Delta AP @ 1.5s,Model D (GRU) vs Model F (Center-Distance),0.1431,0.0094,0.2695,0.2601,0.0340,Statistically Significant (p < 0.05)
+Delta AP @ 1.0s,Model D (GRU) vs Model F (Center-Distance),0.0891,-0.0629,0.2314,0.2943,0.2280,Statistically Inconclusive (CI spans 0)
+Delta AP @ 0.5s,Model D (GRU) vs Model F (Center-Distance),0.0539,-0.0913,0.184,0.2752,0.4410,Statistically Inconclusive (CI spans 0)
+Delta AP @ Mean (1.5s-0.5s),Model D (GRU) vs Model F (Center-Distance),0.0954,-0.0077,0.1965,0.2042,0.0720,Statistically Inconclusive (CI spans 0)
+"Scene AP @ 0.5s (Urban: N_pos=32, N_neg=32)",Model D (GRU),0.6367,0.5159,0.7533,0.2374,N/A,Scene subset: Urban
+"Scene AP @ 0.5s (Urban: N_pos=32, N_neg=32)",Model F (Center-Distance),0.5356,0.4355,0.6551,0.2195,N/A,Scene subset: Urban
+"Scene AP @ 0.5s (Highway: N_pos=11, N_neg=11)",Model D (GRU),0.6912,0.5016,0.8631,0.3615,N/A,Scene subset: Highway
+"Scene AP @ 0.5s (Highway: N_pos=11, N_neg=11)",Model F (Center-Distance),0.6083,0.4305,0.8258,0.3952,N/A,Scene subset: Highway

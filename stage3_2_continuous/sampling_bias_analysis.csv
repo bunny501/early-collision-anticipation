@@ -1,0 +1,8 @@
+Attribute,Positive (N=200),Negative (N=200),Parity / Bias Assessment
+Total Sample Size (Videos),200 videos,200 videos,Perfect 1:1 balance (expanded from N=50 each in Stage 3).
+Video Duration (mean +/- std),38.07 +/- 6.55s,37.67 +/- 7.05s,Durations are well-matched within 0.8s on average.
+Frame Rate (FPS),Nominal 30.0 FPS (range 26.4 - 31.0),Nominal 30.0 FPS (range 23.9 - 30.6),Consistent nominal 30 FPS across both classes.
+Urban Scene Proportion,129 (64.5%),129 (64.5%),Perfect 1:1 match! Stratification eliminated the Stage 3 scene bias.
+Highway Scene Proportion,45 (22.5%),45 (22.5%),Perfect 1:1 match.
+Suburban Scene Proportion,16 (8.0%),16 (8.0%),Perfect 1:1 match.
+Daylight vs Low-Light Conditions,"Normal: 183, Low: 17","Normal: 178, Low: 22",Balanced ambient lighting.

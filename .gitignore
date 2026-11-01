@@ -46,6 +46,7 @@ data/raw/
 *.mkv
 inspect_meta/
 stage3_real_world/inspect_meta/
+stage3_2_continuous/inspect_meta/
 
 # Hugging Face caches and temporary caches
 .cache/

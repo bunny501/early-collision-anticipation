@@ -1,0 +1,7 @@
+Pipeline Component,Hardware Profile,Input Dimension,Mean Latency (ms),Median Latency (ms),P95 Latency (ms),Min Latency (ms),Max Latency (ms),Effective FPS,Stride / Config,Operational Verdict
+YOLOv8n Object Detection,Intel i7-13620H CPU (8 Threads),1280x720 (Native 720p),27.46,27.24,31.1,24.34,32.84,36.4,Step = 6 frames (5 FPS),Dominates perception budget; requires downscaling or GPU for >20 FPS.
+ByteTrack Multi-Object Tracking,Intel i7-13620H CPU,Bbox state lists,2.1,1.28,4.99,1.0,6.76,475.6,Kalman + Hungarian,Negligible overhead (~10-15 ms on CPU).
+Downscaled Background Optical Flow,Intel i7-13620H CPU (OpenCV Farneback),320x180 Grayscale Mask,9.85,9.93,10.87,8.29,12.22,101.5,"2 iterations, 2 levels",Highly predictable execution; runs at >30 FPS standalone.
+Kinematic & Trajectory Feature Extraction,Python / NumPy CPU,10-frame track buffer,0.07,0.06,0.07,0.05,1.36,13618.2,Vectorized NumPy,"Sub-millisecond overhead (>2,000 FPS)."
+Model D: Trajectory GRU Inference,"PyTorch CPU (2-Layer GRU, H=64)",1 x 10 x 14 Tensor,0.81,0.8,0.93,0.66,1.08,1241.1,Float32 forward pass,"Sub-millisecond inference (>1,200 FPS)."
+Complete End-to-End Pipeline (GRU),Intel i7-13620H CPU (Single Frame),1280x720 RGB @ 5 FPS nominal,65.82,65.31,71.49,58.33,73.55,15.19,Full Perception Cycle,Achieves ~4.6-5.2 FPS on CPU. Meets 5 FPS nominal target; requires GPU for 30 FPS.

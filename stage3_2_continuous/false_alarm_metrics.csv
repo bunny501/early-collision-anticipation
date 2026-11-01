@@ -1,0 +1,7 @@
+Model Name,Tuned Threshold,Debounce Criteria,Total Evaluated Duration (min),Total False Alarm Episodes,False Alarms / Minute,Videos with >=1 False Alarm,% Negative Videos with False Alarm,Mean Alarm Duration (s),Median Alarm Duration (s),Max Alarm Duration (s),Mean Peak Risk Score,Max Peak Risk Score
+Model A (Detection Only),0.3,Min 2 consecutive steps (>=0.4s),31.16,175,5.616,47,94.0,5.19,2.9,32.3,0.6384,0.945
+Model B (Detection + Tracking),0.3,Min 2 consecutive steps (>=0.4s),31.16,188,6.034,47,94.0,4.78,2.9,25.7,0.6072,0.9439
+Model C (Trajectory XGBoost),0.3,Min 2 consecutive steps (>=0.4s),31.16,209,6.708,48,96.0,3.9,2.9,27.5,0.6276,0.9456
+Model D (Trajectory GRU),0.3,Min 2 consecutive steps (>=0.4s),31.16,260,8.344,50,100.0,3.95,2.3,29.91,0.8175,0.9998
+Model E (Logistic Regression),0.3,Min 2 consecutive steps (>=0.4s),31.16,124,3.98,48,96.0,10.75,7.1,38.9,0.6132,0.9398
+Model F (Center-Distance),0.35,Min 2 consecutive steps (>=0.4s),31.16,75,2.407,50,100.0,22.82,23.9,38.9,0.5583,0.7669

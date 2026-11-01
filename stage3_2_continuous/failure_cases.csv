@@ -1,0 +1,21 @@
+Error Type,Video ID,Ground Truth,Scene,Weather,Horizon,GRU Risk Score,Model A Risk Score,Center Risk Score,Threshold,Root Cause Analysis
+False Positive,1840,Negative (Normal Driving),Sub-urban,Cloudy,0.5s,0.9881,0.8271,0.5306,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,2119,Negative (Normal Driving),Sub-urban,Cloudy,0.5s,0.9845,0.2025,0.4314,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1887,Negative (Normal Driving),Urban,Clear,0.5s,0.9603,0.7617,0.6158,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1307,Negative (Normal Driving),Urban,Clear,0.5s,0.9555,0.5826,0.5813,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1853,Negative (Normal Driving),Urban,Clear,0.5s,0.9525,0.4321,0.618,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1340,Negative (Normal Driving),Urban,Clear,0.5s,0.9082,0.7565,0.5923,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,2128,Negative (Normal Driving),Urban,Clear,0.5s,0.9029,0.2533,0.5237,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1959,Negative (Normal Driving),Highway,Cloudy,0.5s,0.8806,0.4483,0.5045,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1542,Negative (Normal Driving),Urban,Cloudy,0.5s,0.8646,0.1896,0.3465,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Positive,1218,Negative (Normal Driving),Urban,Rain,0.5s,0.855,0.7989,0.3594,0.3,High central vehicle density or stationary vehicle directly ahead in ego-lane mimicking collision geometry.
+False Negative,503,Positive (Collision / Near-Collision),Urban,Cloudy,0.5s,0.0006,0.7834,0.4477,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,684,Positive (Collision / Near-Collision),Urban,Rain,0.5s,0.0009,0.5666,0.6229,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,642,Positive (Collision / Near-Collision),Urban,Clear,0.5s,0.0027,0.5085,0.3734,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,127,Positive (Collision / Near-Collision),Urban,Clear,0.5s,0.0049,0.2373,0.6458,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,703,Positive (Collision / Near-Collision),Highway,Clear,0.5s,0.0055,0.5827,0.53,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,364,Positive (Collision / Near-Collision),Urban,Clear,0.5s,0.0166,0.3656,0.5065,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,447,Positive (Collision / Near-Collision),Nature,Clear,0.5s,0.0415,0.1637,0.5912,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,273,Positive (Collision / Near-Collision),Urban,Rain,0.5s,0.0571,0.3099,0.405,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,744,Positive (Collision / Near-Collision),Urban,Clear,0.5s,0.0738,0.7824,0.5256,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
+False Negative,351,Positive (Collision / Near-Collision),Urban,Cloudy,0.5s,0.0874,0.6121,0.586,0.3,Peripheral impact or side-swipe where colliding vehicle entered field of view late without extended central trajectory trace.
